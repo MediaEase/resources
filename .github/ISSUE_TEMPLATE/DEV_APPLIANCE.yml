@@ -1,0 +1,97 @@
+name: Developer Application
+description: Apply for a developer role at MediaEase
+title: "application: "
+labels: ["developer-application"]
+assignees: tomcdj71
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for showing interest in joining the MediaEase team!
+
+  - type: input
+    attributes:
+      label: Location (Country)
+      description: What country are you located in?
+      placeholder: "Example: United States"
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: GitHub/GitLab/Bitbucket Profile Link
+      description: Please provide a link to your profile.
+      placeholder: "https://github.com/yourusername"
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Position Applied For
+      description: Choose the position you're interested in.
+      multiple: false
+      options:
+        - PHP / Symfony and Vanilla JavaScript Developer
+        - Bash Developer
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Web Appliance Skills
+      description: Describe your experience with PHP, Symfony, JavaScript, and Twig.
+      placeholder: "Provide your response here."
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: TailwindCSS Experience
+      description: Do you have experience with TailwindCSS? If so, please provide details.
+      placeholder: "Provide your response here."
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Linux Appliance Skills
+      description: Describe your experience with Linux environments, specifically Debian or Ubuntu.
+      placeholder: "Provide your response here."
+    validations:
+      required: false
+  
+  - type: textarea
+    attributes:
+      label: Caddy Server Experience
+      description: Describe your knowledge and experience with Caddy server configurations.
+      placeholder: "Provide your response here."
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: Development Tools
+      description: What development tools (IDEs, etc.) do you regularly use?
+      placeholder: "Example: Visual Studio Code"
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Open Source Contributions
+      description: Have you previously participated in any open source projects? If yes, please provide details.
+      placeholder: "Provide your response here."
+    validations:
+      required: false
+
+  - type: checkboxes
+    attributes:
+      label: Code of Conduct
+      description: By submitting this application, you agree to follow our [Code of Conduct](https://mediaease.github.io/docs/CODE_OF_CONDUCT/)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+
+  - type: markdown
+    attributes:
+      value: "Thanks for completing our form!"
