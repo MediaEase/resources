@@ -1,27 +1,19 @@
 name: Developer Application
 description: Apply for a developer role at MediaEase
-title: "application: "
+title: "dev: "
 labels: ["developer-application"]
 assignees: tomcdj71
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for showing interest in joining the MediaEase team!
+        Thanks for showing interest in joining the MediaEase team! Please fill out the following application form to the best of your ability.
 
   - type: input
     attributes:
-      label: Location (Country)
-      description: What country are you located in?
-      placeholder: "Example: United States"
-    validations:
-      required: true
-
-  - type: input
-    attributes:
-      label: GitHub/GitLab/Bitbucket Profile Link
+      label: Discord Profile
       description: Please provide a link to your profile.
-      placeholder: "https://github.com/yourusername"
+      placeholder: "@username#1234"
     validations:
       required: true
 
